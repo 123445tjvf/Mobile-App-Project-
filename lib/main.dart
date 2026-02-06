@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'screens/portfolio_screen.dart';
+import 'models/portfolio_data.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,49 +11,26 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final portfolioData = PortfolioData(
+      name: 'Akpah Zadok Nana Kwasi',
+      title: 'BSc Computer Science Student',          
+      bio:  'I am a student studing Computer Science in Valley View University in Level 300 \n', 
+      skills: ['C++', 'Java', 'Xampp', 'Python', 'HTML', 'CSS', 'JavaScript', 'Flutter', 'Dart'],
+      education: [
+        Education(
+          institution: 'Valley View University',
+          degree: 'BSc Computer Science',
+          year: '2023–Present',
+        ),
+      ],
+    );
+
     return MaterialApp(
-      title: 'INFT 425 - Akpah Zadok Nana Kwasi',  // Replace [YOUR NAME HERE] with your name
+      title: 'A Professional Portfolio',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const HelloWorldScreen(),
-    );
-  }
-}
-
-class HelloWorldScreen extends StatelessWidget {  // Removed "void"
-  const HelloWorldScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('INFT 425 - Akpah Zadok Nana Kwasi'),  // Replace [YOUR NAME HERE] with your name
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const Text(
-              'Hello World',
-              style: TextStyle(  // Fixed: Textstyle → TextStyle
-                fontSize: 40,  // Fixed: fontsize → fontSize
-                fontWeight: FontWeight.bold,
-                color: Color.fromARGB(255, 243, 33, 44),
-              ),
-            ),
-            const SizedBox(height: 20),
-            const Text(
-              'Department of Computing Sciences and Engineering',
-              style: TextStyle(  // Fixed: Textstyle → TextStyle
-                fontSize: 16,  // Fixed: fontsize → fontSize
-                fontStyle: FontStyle.italic,
-              ),
-              textAlign: TextAlign.center,
-            ),
-          ],
-        ),
-      ),
+      home: PortfolioScreen(data: portfolioData),
     );
   }
 }
