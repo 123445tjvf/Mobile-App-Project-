@@ -1,36 +1,25 @@
 import 'package:flutter/material.dart';
-import 'screens/portfolio_screen.dart';
-import 'models/portfolio_data.dart';
+import 'screens/home_screen.dart';
+import 'screens/departments_screen.dart';
+import 'screens/department_detail.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const CampusDirectoryApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class CampusDirectoryApp extends StatelessWidget {
+  const CampusDirectoryApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final portfolioData = PortfolioData(
-      name: 'Akpah Zadok Nana Kwasi',
-      title: 'BSc Computer Science Student',          
-      bio:  'I am a student studing Computer Science in Valley View University in Level 300 \n', 
-      skills: ['C++', 'Java', 'Xampp', 'Python', 'HTML', 'CSS', 'JavaScript', 'Flutter', 'Dart'],
-      education: [
-        Education(
-          institution: 'Valley View University',
-          degree: 'BSc Computer Science',
-          year: '2023–Present',
-        ),
-      ],
-    );
-
     return MaterialApp(
-      title: 'A Professional Portfolio',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home: PortfolioScreen(data: portfolioData),
+      debugShowCheckedModeBanner: false,
+      initialRoute: '/',
+      routes: {
+        '/': (context) => HomeScreen(),
+        '/departments': (context) => DepartmentsScreen(),
+        '/department/detail': (context) => DepartmentDetailScreen(),
+      },
     );
   }
 }
