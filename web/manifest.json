@@ -1,6 +1,6 @@
 {
-    "name": "week3_campus_directory",
-    "short_name": "week3_campus_directory",
+    "name": "expense_tracker_week4",
+    "short_name": "expense_tracker_week4",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
