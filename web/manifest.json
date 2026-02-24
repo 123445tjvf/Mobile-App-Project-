@@ -1,6 +1,6 @@
 {
-    "name": "expense_tracker_week4",
-    "short_name": "expense_tracker_week4",
+    "name": "week5_auth_app",
+    "short_name": "week5_auth_app",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
