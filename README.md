@@ -1,4 +1,4 @@
-# expense_tracker_week4
+# week5_auth_app
 
 A new Flutter project.
 

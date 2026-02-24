@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "983344844817",
+    "project_id": "inft425-week5-8d3df",
+    "storage_bucket": "inft425-week5-8d3df.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:983344844817:android:240d20239ceef9ef12a1b0",
+        "android_client_info": {
+          "package_name": "com.example.week5_auth_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "983344844817-id5p4rtjdrj4vou8ocjsl6usnlruihvf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDjmSVcY8RerIA9uFkloBXKAplupOrDoM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "983344844817-id5p4rtjdrj4vou8ocjsl6usnlruihvf.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "983344844817-pnfhn6nlliuuf5o62eha5lhr3bhg0acd.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.week5AuthApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
